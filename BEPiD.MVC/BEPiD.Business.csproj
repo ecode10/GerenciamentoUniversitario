@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{491078E3-7D39-4F4B-A8D3-BAA7F2C0B94B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BEPiD.Business</RootNamespace>
+    <AssemblyName>BEPiD.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cript2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>assembly\Cript2.dll</HintPath>
+    </Reference>
+    <Reference Include="DllDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>assembly\DllDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BRL\AlunoBRL.cs" />
+    <Compile Include="BRL\AlunoTipoBRL.cs" />
+    <Compile Include="BRL\AplicativoBRL.cs" />
+    <Compile Include="BRL\AvaliacaoBRL.cs" />
+    <Compile Include="BRL\CategoriaBRL.cs" />
+    <Compile Include="BRL\MaquinaBRL.cs" />
+    <Compile Include="BRL\ProfessorBRL.cs" />
+    <Compile Include="BRL\TipoMaquinaBRL.cs" />
+    <Compile Include="DAO\AlunoTipoDAO.cs" />
+    <Compile Include="DAO\AplicativoDAO.cs" />
+    <Compile Include="DAO\AvaliacaoDAO.cs" />
+    <Compile Include="DAO\CategoriaDAO.cs" />
+    <Compile Include="DAO\Context.cs" />
+    <Compile Include="DAO\AlunoDAO.cs" />
+    <Compile Include="DAO\MaquinaDAO.cs" />
+    <Compile Include="DAO\ProfessorDAO.cs" />
+    <Compile Include="DAO\TipoMaquinaDAO.cs" />
+    <Compile Include="DTO\AlunoDTO.cs" />
+    <Compile Include="DTO\AlunoTipoDTO.cs" />
+    <Compile Include="DTO\AplicativoDTO.cs" />
+    <Compile Include="DTO\AvaliacaoDTO.cs" />
+    <Compile Include="DTO\CategoriaDTO.cs" />
+    <Compile Include="DTO\MaquinaDTO.cs" />
+    <Compile Include="DTO\ProfessorDTO.cs" />
+    <Compile Include="DTO\TipoMaquinaDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Conversion.cs" />
+    <Compile Include="Util\Data.cs" />
+    <Compile Include="Util\EmailEnvio.cs" />
+    <Compile Include="Util\Validacao.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="assembly\Cript2.dll" />
+    <Content Include="assembly\CriptQuery.dll" />
+    <Content Include="assembly\DllDados.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

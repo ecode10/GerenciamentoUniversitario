@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BEPiD2017.Site" %>
+
+<%@ Register Src="~/MenuControl.ascx" TagPrefix="uc1" TagName="MenuControl" %>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        .gm-style-pbc{
+            transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center
+        }
+        .gm-style-pbt{
+            font-size:22px;
+            color:white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            position:relative;
+            margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)
+
+        }
+    </style>
+    <title>BEPiD UCB</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/TemplateBEPiD_files/w3.css">
+    <link rel="stylesheet" href="/TemplateBEPiD_files/css">
+    <link rel="stylesheet" href="/TemplateBEPiD_files/font-awesome.min.css">
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/TemplateBEPiD_files/mac.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+    <script type="text/javascript" charset="UTF-8" src="/TemplateBEPiD_files/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/TemplateBEPiD_files/map.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/TemplateBEPiD_files/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/TemplateBEPiD_files/marker.js"></script>
+    <style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style>
+    <script type="text/javascript" charset="UTF-8" src="/TemplateBEPiD_files/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/TemplateBEPiD_files/controls.js"></script>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <uc1:MenuControl runat="server" id="MenuControl" />
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+
+
+    
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <table style="width:100%;">
+        <tr>
+            <td><a href="/default">Principal</a></td>
+            <td><a href="/default#about">Sobre</a></td>
+            <td><a href="/appspublicados">Apps Publicados</a></td>
+            <td><a href="/default#team">Tutores</a></td>
+            <td><a href="/default#manager">Gestores</a></td>
+            <td><a href="/processoseletivo">Processo Seletivo</a></td>
+            <td><a href="http://aluno.bepiducb.com.br">Ambiente do aluno</a></td>
+            <td><a href="http://admin.bepiducb.com.br">Ambiente do Tutor</a></td>
+            <td><a href="/contact">Fale Conosco</a></td>
+        </tr>
+    </table>
+  <%--<p>Powered by <a href="/default" title="BEPiD UCB - Universidade Católica de Brasília" target="_blank">BEPiD UCB</a></p>--%>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script src="/TemplateBEPiD_files/js"></script>
+
+<div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;">
+    <span style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BEPiD UCB</span>
+</div>
+</body>
+</html>

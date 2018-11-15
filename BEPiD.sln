@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEPiD", "BEPiD\BEPiD.csproj", "{723E594F-33BE-405D-8DB1-C47B551B1A70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEPiD.Business", "BEPiD.MVC\BEPiD.Business.csproj", "{491078E3-7D39-4F4B-A8D3-BAA7F2C0B94B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEPiD.Service", "BEPiD.Service\BEPiD.Service.csproj", "{9B8E71E2-A6FD-4A29-BF04-D60328967538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEPiD2016", "BEPiD2016\BEPiD2016.csproj", "{60E625F0-8848-4E99-881B-E3BECD98AD96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "admin.bepiducb.com.br", "admin.bepiducb.com.br\admin.bepiducb.com.br.csproj", "{E745E389-1249-483A-B16B-3E614A152209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aluno.bepiducb.com.br", "aluno.bepiducb.com.br\aluno.bepiducb.com.br.csproj", "{8384CD54-D9F4-42B1-9EAA-684C7E347EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEPiD2017", "BEPiD2017\BEPiD2017.csproj", "{44EF496A-459E-4DEA-BE8C-99311FB23F27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{723E594F-33BE-405D-8DB1-C47B551B1A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723E594F-33BE-405D-8DB1-C47B551B1A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723E594F-33BE-405D-8DB1-C47B551B1A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723E594F-33BE-405D-8DB1-C47B551B1A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491078E3-7D39-4F4B-A8D3-BAA7F2C0B94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491078E3-7D39-4F4B-A8D3-BAA7F2C0B94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491078E3-7D39-4F4B-A8D3-BAA7F2C0B94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491078E3-7D39-4F4B-A8D3-BAA7F2C0B94B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8E71E2-A6FD-4A29-BF04-D60328967538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8E71E2-A6FD-4A29-BF04-D60328967538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8E71E2-A6FD-4A29-BF04-D60328967538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8E71E2-A6FD-4A29-BF04-D60328967538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E625F0-8848-4E99-881B-E3BECD98AD96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E625F0-8848-4E99-881B-E3BECD98AD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E625F0-8848-4E99-881B-E3BECD98AD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E625F0-8848-4E99-881B-E3BECD98AD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E745E389-1249-483A-B16B-3E614A152209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E745E389-1249-483A-B16B-3E614A152209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E745E389-1249-483A-B16B-3E614A152209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E745E389-1249-483A-B16B-3E614A152209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8384CD54-D9F4-42B1-9EAA-684C7E347EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8384CD54-D9F4-42B1-9EAA-684C7E347EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8384CD54-D9F4-42B1-9EAA-684C7E347EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8384CD54-D9F4-42B1-9EAA-684C7E347EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44EF496A-459E-4DEA-BE8C-99311FB23F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44EF496A-459E-4DEA-BE8C-99311FB23F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44EF496A-459E-4DEA-BE8C-99311FB23F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44EF496A-459E-4DEA-BE8C-99311FB23F27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mauriciojunior.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BEPiD.Service\\BEPiD.Service.csproj
+		SccProjectName1 = BEPiD.Service
+		SccLocalPath1 = BEPiD.Service
+		SccProjectUniqueName2 = BEPiD.MVC\\BEPiD.Business.csproj
+		SccProjectName2 = BEPiD.MVC
+		SccLocalPath2 = BEPiD.MVC
+		SccProjectUniqueName3 = BEPiD\\BEPiD.csproj
+		SccProjectName3 = BEPiD
+		SccLocalPath3 = BEPiD
+		SccProjectUniqueName4 = BEPiD2016\\BEPiD2016.csproj
+		SccProjectName4 = BEPiD2016
+		SccLocalPath4 = BEPiD2016
+		SccProjectUniqueName5 = admin.bepiducb.com.br\\admin.bepiducb.com.br.csproj
+		SccProjectName5 = admin.bepiducb.com.br
+		SccLocalPath5 = admin.bepiducb.com.br
+		SccProjectUniqueName6 = aluno.bepiducb.com.br\\aluno.bepiducb.com.br.csproj
+		SccProjectName6 = aluno.bepiducb.com.br
+		SccLocalPath6 = aluno.bepiducb.com.br
+		SccProjectUniqueName7 = BEPiD2017\\BEPiD2017.csproj
+		SccProjectName7 = BEPiD2017
+		SccLocalPath7 = BEPiD2017
+	EndGlobalSection
+EndGlobal
