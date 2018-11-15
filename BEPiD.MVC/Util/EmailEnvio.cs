@@ -14,9 +14,9 @@ namespace BEPiD.Business.Util
         public static void enviaEmail(string[] emailPara, string subject, string message)
         {
             var msg = new MailMessage();
-            var smtpClient = new SmtpClient("smtp.bepiducb.com.br", 587);
+            var smtpClient = new SmtpClient("", 587);
 
-            msg.From = new MailAddress("inscricoes@bepiducb.com.br");
+            msg.From = new MailAddress("");
 
             for (int i = 0; i < emailPara.Length; i++)
             {
@@ -34,7 +34,7 @@ namespace BEPiD.Business.Util
             msg.SubjectEncoding = System.Text.Encoding.GetEncoding("ISO-8859-1");
             msg.BodyEncoding = System.Text.Encoding.GetEncoding("ISO-8859-1");
 
-            var loginInfo = new NetworkCredential("inscricoes@bepiducb.com.br", "G52-xg9-s6d-veT");
+            var loginInfo = new NetworkCredential("", "");
             smtpClient.EnableSsl = false;
             //smtpClient.UseDefaultCredentials = false;
             smtpClient.Credentials = loginInfo;
@@ -62,12 +62,12 @@ namespace BEPiD.Business.Util
             cliente.Host = "smtp.gmail.com";
             cliente.Port = 587;
 
-            System.Net.NetworkCredential credentials = new NetworkCredential("bepiducb@gmail.com", "catolica2014");
+            System.Net.NetworkCredential credentials = new NetworkCredential("", "");
             cliente.UseDefaultCredentials = true;
             cliente.Credentials = credentials;
 
             MailMessage msg = new MailMessage();
-            msg.From = new MailAddress("bepiducb@gmail.com");
+            msg.From = new MailAddress("");
 
             for (int i = 0; i < emailPara.Length; i++)
             {
@@ -101,7 +101,7 @@ leia o edital e faça a sua inscrição. Em caso de dúvidas, favor entre em con
 Coordenação do Projeto BEPiD");
 
             // Compose a message
-            MailMessage mail = new MailMessage("bepid@mauriciojunior.org", email);
+            MailMessage mail = new MailMessage("", email);
             mail.Subject = "Processo Seletivo Aberto para o BEPiD 2017";
             mail.Body = str.ToString();
             mail.IsBodyHtml = true;
@@ -111,8 +111,8 @@ Coordenação do Projeto BEPiD");
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
-            client.Credentials = new System.Net.NetworkCredential("bepid@ecode10.com", "[cmjunior]");
-            client.Host = "smtp.mailgun.org";
+            client.Credentials = new System.Net.NetworkCredential("", "");
+            client.Host = "";
 
             client.Send(mail);
         }
@@ -126,7 +126,7 @@ Coordenação do Projeto BEPiD");
             str.Append(mensagem);
 
             // Compose a message
-            MailMessage mail = new MailMessage("bepid@admin.bepiducb.com.br", email);
+            MailMessage mail = new MailMessage("", email);
             mail.Subject = assunto;
             mail.Body = str.ToString();
             mail.IsBodyHtml = true;
@@ -136,7 +136,7 @@ Coordenação do Projeto BEPiD");
             client.Port = 587;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
-            client.Credentials = new System.Net.NetworkCredential("bepid@ecode10.com", "[cmjunior]");
+            client.Credentials = new System.Net.NetworkCredential("", "");
             client.Host = "smtp.mailgun.org";
 
             client.Send(mail);
